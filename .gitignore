@@ -59,6 +59,15 @@ out/
 .env.test
 .env.production
 
+# Explicitly include model files and directories
+!**/ml_models/
+!**/ml_models/**
+!*.h5
+!*.pkl
+!*.joblib
+!*.model
+!*.csv
+
 # Explicitly include model files
 !**/models/
 !**/models/**
