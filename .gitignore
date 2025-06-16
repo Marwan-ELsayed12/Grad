@@ -57,4 +57,12 @@ out/
 .env.local
 .env.development
 .env.test
-.env.production 
+.env.production
+
+# Explicitly include model files
+!**/models/
+!**/models/**
+!*.h5
+!*.pkl
+!*.joblib
+!*.model 
