@@ -1,0 +1,290 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffbe7;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 3px -2px rgb(255, 139, 6);
+    margin: 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #258e44;
+   
+    
+}
+
+.nav-logo img {
+    height: 140px; /* Adjust the height as needed */
+    width: 150px;; 
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between menu items */
+    
+}
+
+.nav-menu li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-menu li:hover {
+    color: #38a16e; /* Change color on hover */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+      gap: 10px;
+}
+
+.search-box input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box img {
+    width: 20px; /* Adjust icon size */
+    margin-left: 10px; /* Space between icons */
+    cursor: pointer;
+}
+
+.search-box button {
+    background-color: #fbad39;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between button and icons */
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #f7cb7f; /* Darker shade on hover */
+}
+
+.nav-menu hr{
+    border:none;
+    width:80%;
+    height:3px;
+    border-radius:10px;
+    background: #357b27;
+}
+  
+body {
+    background-color: rgb(60, 141, 96);/* Replace with your desired color */
+   
+    
+  }
+/* تنسيق المربع المنبثق للإشعار */
+.notification-popup {
+    position: absolute;
+    top: 50px;   /* يتم تعديل هذه القيمة حسب المسافة بين الجرس والمربع */
+    right: 10px; /* الموقع بالقرب من أيقونة الجرس */
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* إضافة تأثير انبثاق للمربع المنبثق */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تنسيق العلامة الحمراء بجانب الجرس */
+.bell-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.red-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* User Menu Styles */
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-menu-button {
+    background-color: #fbad39;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-menu-button:hover {
+    background-color: #f7cb7f;
+}
+
+.user-menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    min-width: 150px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+.menu-item {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+.menu-item.logout {
+    color: #ff4d4d;
+    border-top: 1px solid #eee;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.menu-item.logout:hover {
+    background-color: #fff3f3;
+}
+
+.nav-icon-link {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff920e;
+    color: white;
+    font-size: 12px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.login-orange {
+  background-color: #fbad39;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-orange:hover {
+  background-color: #f7cb7f;
+}
+
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #3e7a48;
+}
+
+/* Responsive */
+
+/* Desktop */
+.desktop-only {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 1100px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #fffbe7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+    width: 220px;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

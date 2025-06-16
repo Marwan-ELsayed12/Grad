@@ -1,0 +1,243 @@
+.item {
+  width: 230px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f78c27;
+  border-radius: 10px;
+  box-shadow: 5px 3px 3px rgb(98, 130, 62);
+  margin: 10px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-frame {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f78c27;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.image-frame img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-title {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: bold;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.item-price, .item button {
+  margin-top: 5px;
+}
+
+.item-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1px; 
+  width: 100%;
+  margin-top: 0px !important;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.item-button {
+  width: 90%;
+  height: 37px; 
+  
+  background-color: #3f7e37;
+  color: rgb(249, 252, 247);
+  border: none;
+  border-radius: 999px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.item-button:hover {
+  background-color: #65b358;
+  transform: scale(1.02);
+}
+
+.item a {
+  text-decoration: none !important;
+}
+.item-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  max-width: 220px;
+  overflow-wrap: break-word;
+  margin-bottom: 10px; 
+}
+
+.item-price {
+  font-size: 18px;
+  color: #1f1d1d !important;
+  font-weight: bold;
+  text-align: center;
+}
+.item-info {
+margin-top: 0px;
+  margin-bottom: 3px; 
+}
+
+.borrow-button, .wishlist-button {
+  margin-top: 5px;
+  padding: 8px 0;
+  background-color: #3f7e37;  
+  border: none;
+  border-radius: 10px;
+  color: rgb(249, 252, 247);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist-button {
+  background-color: #206706;  
+  
+}
+
+
+.borrow-button:hover, .item-price button:hover {
+  background-color: #65b358;  
+  transform: scale(1.02);  
+}
+
+.wishlist-button:hover {
+  background-color: #10b12e;  
+  transform: scale(1.02);  
+}
+
+
+.item a {
+  text-decoration: none !important; 
+}
+@media (max-width: 640px) {
+  .items-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .item {
+    height: 320px !important; 
+    padding: 8px !important;
+    width: 100%;
+  }
+
+
+  .item-buttons button,
+  .item-price button {
+    padding: 6px 0 !important;   
+    font-size: 12px !important;  
+    border-radius: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .item-title {
+    font-size: 16px !important;
+    max-height: none !important;
+    white-space: normal !important;
+  }
+  @media (max-width: 640px) {
+
+  .image-frame {
+    height: 120px !important;  
+    padding: 5px !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+
+  .image-frame img {
+    height: 100% !important;
+    object-fit: contain !important;
+    border-radius: 4px !important;
+  }
+
+  
+  .item-title {
+    font-size: 14px !important;  
+    max-height: 38px !important; 
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  }
+}
+@media (min-width: 640px) and (max-width: 1100px) {
+  .items-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .item {
+    height: 320px !important; 
+    padding: 8px !important;
+    width: 100%;
+  }
+
+
+  .image-frame {
+    height: 100px !important;
+    padding: 4px !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+
+  .image-frame img {
+    height: 100% !important;
+    object-fit: contain !important;
+    border-radius: 4px !important;
+  }
+
+  .item-title {
+    font-size: 13px !important;
+    max-height: 36px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    margin-top: 6px;
+  }
+
+  .item-buttons button,
+  .item-price button {
+    padding: 6px 0 !important;
+    font-size: 12px !important;
+    border-radius: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+

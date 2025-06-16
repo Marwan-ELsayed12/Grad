@@ -1,0 +1,54 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure the body and html take full height */
+  html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure the app takes full viewport height */
+  }
+  
+  .content {
+    flex: 1;  /* Take up remaining space */
+  }
+  
+
+  
+  /* Ensure the footer sticks to the bottom */
+  .footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Optional: Set overflow rules */
+  .container {
+    overflow: hidden;
+  }
+  
+  /* Prevent margin issues */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Optional: Add extra padding or margin only where needed */
+  .app {
+    min-height: 100vh; /* Ensure the layout takes up the full screen */
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  
+  
+  
+  

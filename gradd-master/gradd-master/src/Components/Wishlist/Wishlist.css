@@ -1,0 +1,179 @@
+.wishlist-container {
+    background-color: #fffbe7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    min-height: calc(100vh - 200px);
+     margin-top: 0px;
+}
+
+.wishlist-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.empty-wishlist {
+    text-align: center;
+    padding: 40px;
+}
+
+.empty-wishlist p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.continue-browsing {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.continue-browsing:hover {
+    background-color: #3bc042;
+}
+
+.wishlist-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.wishlist-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wishlist-item:hover {
+    transform: translateY(-5px);
+}
+
+.wishlist-item img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.item-actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.move-to-cart, .borrow-button, .remove-button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.move-to-cart {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.move-to-cart:hover {
+    background-color: #3bc042;
+}
+
+.borrow-button {
+    background-color: #ff920e;
+    color: white;
+}
+
+.borrow-button:hover {
+    background-color: #ffaa40;
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.remove-button:hover {
+    background-color: #ff3333;
+}
+
+.error-message {
+    color: #ff4d4d;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Add loading state styles */
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Add return button styles */
+.return-button {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.return-button:hover {
+    background-color: #ec971f;
+}
+
+/* Update button states */
+.move-to-cart:disabled,
+.borrow-button:disabled,
+.return-button:disabled,
+.remove-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: #ccc;
+}

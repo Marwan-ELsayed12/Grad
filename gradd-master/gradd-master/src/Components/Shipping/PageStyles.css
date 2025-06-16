@@ -1,0 +1,145 @@
+/* General Container */
+.page-container {
+  background-color: #fffbe7; /* Background color */
+    text-align: center;
+    padding: 160px;
+   margin-top: 0px;
+  
+   margin-right: 20px;
+   margin-left: 20px;
+  
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: -30px; 
+  color: #1e3a8a;
+}
+
+
+/* Cards Layout */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Note */
+.note {
+  color: #dc2626;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Journey Timeline */
+.journey-card {
+  background-color: #e0f2fe;
+}
+
+.journey-timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.journey-timeline li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.journey-timeline li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+.track-order-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #edf2ec;
+}
+
+.track-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.track-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.track-error-message {
+  
+  background-color: #f8d7da;
+  
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 15px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.track-error-message::before {
+  content: "⚠️";
+  font-size: 18px;
+}
+
+
+
+.order-details {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #ccc;
+}

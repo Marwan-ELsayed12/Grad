@@ -1,0 +1,74 @@
+
+
+.popular {
+   
+    background-color: #fffbe7; /* Background color */
+    text-align: center;
+    padding:10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 90px;
+   transform: translateY(-300px);
+   
+  }
+  
+  .popular h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .popular hr {
+    width: 60%;
+    margin: 10px auto 20px auto;
+    border: 1px solid #3a643c;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+      color: #a8ffa3 !important; /* Original green color */
+      font-size: 30px; /* Adjust the size of the arrows if needed */
+      opacity: 1; /* Ensure they are fully visible */
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+      color: #bdfeaf; /* Change color on hover (darker shade of green) */
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      font-size: 30px; /* Increase arrow size if necessary */
+      color: #377234; /* Set the color for the arrows */
+  }
+  
+  .swiper-button-next:disabled,
+  .swiper-button-prev:disabled {
+      color: #ccc; /* Disabled arrows with a lighter color */
+  }
+
+
+ /* Default color for pagination bullets */
+.swiper-pagination .swiper-pagination-bullet {
+  background: #377234 !important; /* Green color for inactive bullets */
+ 
+}
+
+/* Color for the active pagination bullet */
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #4a7442 !important; /* Darker green for active bullet */
+}
+
+/* Optional: Change bullet size */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px !important; /* You can adjust the size of the bullets */
+  height: 10px !important;
+}
+
+/* Optional: Change size when active */
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px !important; /* Larger size for active bullet */
+  height: 10px !important;
+}

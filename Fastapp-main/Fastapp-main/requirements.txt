@@ -1,0 +1,42 @@
+# Core Dependencies (install these first)
+fastapi>=0.110.0
+uvicorn>=0.27.1
+pydantic>=2.6.1
+pydantic-settings>=2.1.0
+python-multipart>=0.0.9
+email-validator>=2.1.0.post1
+python-dotenv>=1.0.1
+
+# Database
+sqlalchemy>=2.0.27
+alembic>=1.13.1
+psycopg2-binary>=2.9.9
+
+# Authentication
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.9
+email-validator>=2.1.0.post1
+
+# Utilities
+scikit-surprise==1.1.3
+python-dateutil>=2.8.2
+pytz>=2024.1
+requests>=2.31.0
+python-slugify>=8.0.4
+python-dotenv>=1.0.1
+numpy
+pandas>=2.2.1
+scikit-learn>=1.4.1.post1
+scipy>=1.12.0
+joblib>=1.3.2
+transformers>=4.38.2
+torch>=2.2.1
+
+# Development (optional, can be installed separately)
+pytest>=8.0.2
+pytest-cov>=4.1.0
+httpx>=0.27.0
+black>=24.2.0
+isort>=5.13.2
+flake8>=7.0.0
