@@ -44,33 +44,35 @@ ENV/
 .DS_Store
 Thumbs.db
 # Large files and models
-*.pkl
-*.h5
-*.model
-*.bin
-*.pt
-*.pth
-*.onnx
-*.tflite
-*.pb
-*.ckpt
-*.safetensors
-*.gguf
-*.ggml
-*.ggla
+# Remove these general ignore rules if you want to track specific models
+# *.pkl
+# *.h5
+# *.model
+# *.bin
+# *.pt
+# *.pth
+# *.onnx
+# *.tflite
+# *.pb
+# *.ckpt
+# *.safetensors
+# *.gguf
+# *.ggml
+# *.ggla
 
 # Data files
-*.csv
-*.json
-*.jsonl
-*.parquet
-*.feather
-*.arrow
-*.db
-*.sqlite
-*.sqlite3
-*.db-journal
-*.sqlite3-journal
+# Remove these general ignore rules if you want to track specific data files
+# *.csv
+# *.json
+# *.jsonl
+# *.parquet
+# *.feather
+# *.arrow
+# *.db
+# *.sqlite
+# *.sqlite3
+# *.db-journal
+# *.sqlite3-journal
 
 # Logs and temporary files
 logs/
@@ -78,4 +80,33 @@ tmp/
 temp/
 *.log.*
 *.tmp
+
+# Explicitly include ml_models directory and specific model/data files
+!Fastapp-main/Fastapp-main/ml_models/
+!Fastapp-main/Fastapp-main/ml_models/**
+!*.pkl
+!*.csv
+!*.h5
+!*.model
+!*.bin
+!*.pt
+!*.pth
+!*.onnx
+!*.tflite
+!*.pb
+!*.ckpt
+!*.safetensors
+!*.gguf
+!*.ggml
+!*.ggla
+!*.json
+!*.jsonl
+!*.parquet
+!*.feather
+!*.arrow
+!*.db
+!*.sqlite
+!*.sqlite3
+!*.db-journal
+!*.sqlite3-journal
 
